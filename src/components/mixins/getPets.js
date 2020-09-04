@@ -3,7 +3,7 @@ export const getPets = {
     methods: {
         _getPets(a) {
             axios
-                .get('./getpets/getpets.php')
+                .get('http://www.shaunnelson.com/skunkworks/petfindertest/getpets.php')
                 .then(response => {
                     a === '1' ? this.petData = this._getPet(response.data.animals) : 
                     this.petData = this._removeNull(response.data.animals)
