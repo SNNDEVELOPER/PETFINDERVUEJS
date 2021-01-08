@@ -3,7 +3,5 @@ import petfinderDetails from './components/petfinderDetails.vue';
 
 export const routes = [
     { path: '*', component: petfinderPets},
-    {  name: 'pets', path: '/pets', component: petfinderPets },
-    { name: 'petdetails', path: '/petdetails', component: petfinderDetails }
-
+    {  name: 'pets', path: '/pets', component: petfinderPets }
 ];
